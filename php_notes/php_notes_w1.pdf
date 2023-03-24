@@ -1,0 +1,101 @@
+
+-To print use echo
+-open tag <?php ,must close it if there another language. 
+-end it with ;
+-to print a string echo'test';
+-to write single comment // or #
+-to write multi comment /*
+-----------------------------------------------------------------------
+
+-Datatypes:
+-bool--->Boolen:
+-float
+-string
+-int--->integer
+-array
+-gettype()
+
+--------------------------------------------------------------------------
+
+-to convert from string to int use (int),this is cast.
+
+-Var_dump():to know the datatype will return.
+-to print saved keyword like php:
+Echo'hello"php"';
+Or 
+Echo'hello \'php\' ';
+Or
+Echo'hello \"php\" ';
+
+----------------------------------------------------------------------------
+
+Arrays in PHP is a type of data structure that allows us to store multiple elements of similar data type under a single variable thereby saving us the effort of creating a different variable for every data. The arrays are helpful to create a list of ...
+
+<?php
+
+// One way to create an indexed array
+$name_one = array("Zack", "Anthony", "Ram", "Salim", "Raghav");
+
+// Accessing the elements directly
+echo "Accessing the 1st array elements directly:\n";
+echo $name_one[2], "\n";
+echo $name_one[0], "\n";
+echo $name_one[4], "\n";
+---------------------------------------------------------------------
+variables in php
+Creating (Declaring) PHP Variables
+In PHP, a variable starts with the $ sign, followed by the name of the variable:
+
+ExampleGet your own PHP Server
+<?php
+$txt = "Hello world!";
+$x = 5;
+$y = 10.5;
+?>
+-------------------------------------------------------------------------
+PHP Constants
+Constants are like variables except that once they are defined they cannot be changed or undefined.
+
+A constant is an identifier (name) for a simple value. The value cannot be changed during the script.
+
+A valid constant name starts with a letter or underscore (no $ sign before the constant name).
+
+Note: Unlike variables, constants are automatically global across the entire script.
+
+Create a PHP Constant
+To create a constant, use the define() function.
+
+Syntax
+define(name, value, case-insensitive)
+Parameters:
+
+name: Specifies the name of the constant
+value: Specifies the value of the constant
+case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false
+--------------------------------------------------------------------------------------------
+
+pre-defined constants[case sensetive]
+PHP_VERSION
+PHP_OS_FAMILY
+PHP_INT_MAX
+DEFAULT_INCLUDE_PATH
+
+Magic constants [case Insensitive]
+_LINE_
+_FILE_
+_DIR_
+
+Reversed Keywords
+break
+clone
+------------------------------------------------------------------------------------------------
+PHP Operators
+Operators are used to perform operations on variables and values.
+
+PHP divides the operators in the following groups:
+
+Arithmetic operators[+,-,*,/,%,**]
+Assignment operators[+=,-=,*=,/=,**=]
+Comparison operators[==,>=,<=,<>,!=,===,!==,>,<.<=>]
+Increment/Decrement operators[++.--]
+Logical operators[and,&&,or,||,xor]
