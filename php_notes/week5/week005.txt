@@ -1,0 +1,44 @@
+v44:v48
+PRG--->Post-Redirect-Get
+-------------------------------------
+-use a session to expire information
+-------------------------------------------
+-flash() and unflash() are methods that can be used to store temporary data in the session for a single redirect request. The flash() method is used to store data in the session, while the unflash() method is used to remove the data from the session after it has been retrieved.
+
+For example, in Laravel, you might use the flash() method like this:
+
+$request->session()->flash('message', 'Post created successfully!');
+
+This would store a message in the session that can be retrieved on the next request, typically using a view. For example, in a view template, you might retrieve the message like this:
+
+@if (session('message'))
+    <div class="alert alert-success">
+        {{ session('message') }}
+    </div>
+@endif
+
+Once the message has been displayed, you can remove it from the session using the unflash() method, like this:
+
+$request->session()->unflash('message');
+
+This ensures that the message is only displayed once and is not persisted in the session beyond the current request.
+=============================================================================================ooop vedio
+The four main principles of OOP are:
+
+    Encapsulation: This means that the data and behavior of an object should be hidden from the outside world, and can only be accessed through well-defined interfaces.
+
+    Inheritance: This allows you to create new classes that are based on existing classes, and inherit their properties and methods.
+
+    Polymorphism: This allows you to use a single interface to represent different types of objects. For example, you might have a Shape class with a draw() method, and then create subclasses like Circle and Square that override the draw() method to draw themselves.
+
+    Abstraction: This means that you should focus on the essential features of an object and ignore the irrelevant details.
+-------------------------------------------------------------------------------------------------------------------------------
+An object is an instance of a class in Object-Oriented Programming (OOP). It is a specific entity created from the blueprint defined by the class. An object has state and behavior, which are defined by the properties and methods of the class it is instantiated from.
+----------------------------------------------------------------------------------------------------------------------------
+a class is a blueprint or a template that defines the properties and behaviors of objects. A class is like a blueprint for creating objects - it defines the attributes and methods that an object should have.
+======================================================================
+oop article
+-you could define a save method which saves the object information to a database.
+-You can define a constructor by defining the __construct method.
+-You need to use the new keyword when you want to instantiate an object of any class along with its class name, and you'll get back a new object instance of that class.
+
