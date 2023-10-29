@@ -1,0 +1,37 @@
+/* Form container */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+/* Form input fields */
+.form-container input[type=text],
+.form-container input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Form input label */
+.form-container label {
+    font-weight: bold;
+}
+
+/* Error message */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+/* Confirmation message */
+.confirmation-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: green;
+}
